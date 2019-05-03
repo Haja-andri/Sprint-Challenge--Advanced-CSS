@@ -179,6 +179,12 @@ nav a {
   font-size: 1.6rem;
   margin: 2rem;
 }
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.6rem;
+    margin: 1rem;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
