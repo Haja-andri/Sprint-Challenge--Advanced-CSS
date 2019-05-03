@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+It allows us to (very) easily size the different fonts and spacing (margin & padding) of the site, proportionally to the default font size of the browser (usually 16px) which become the reference across the page/site (unless specified otherwise). This make the general layout more "harmonious". It also allow the user to change its browser default font size to its visual ability, without relying on the zoom fonction.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first mean mobile screens are the starting point of the design approach, coding for smaller screens first and then factoring the elements and layout as the screen expand. This approach will be reflected in the media queries of the CSS with smaller screens coming first followed by the larger ones (defined by minimum size constraint). Desktop first is simply the other way around, designing for larger screens first (defined by maximum size constraint), and scale down to smaller screens with the code.  
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It allows us to (very) easily size the different fonts and spacing (margin & padding) of the site, proportionally to the default font size of the browser (usually 16px) which become the reference across the page/site (unless specified otherwise). This make the general layout more "harmonious". It also allow the user to change its browser default font size to its visual ability, without relying on the zoom fonction.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing happens in 3 steps, #1 the creations of an input file (the developper .less code), #2 the compilation of the input file, and #3 the generation of the CSS file from the compilation. This approach expand the flexibility and improve the maintainability of the design code (CSS) by enabling the usage of variables, reusable portion of codes, and some built in functions in the input file. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favourite concept is simply the flexibility a scalability of variables. It allows to centrally manage the important and/or recurrent parameters of the website pages, which is very convenient when things evolve or has to change. 
+The concept that give me the most trouble is the "escaping" because I don't see real value in its usage (at least at this stage). Its like a variables storing a bigger chunk of code to be reused, but the majority of the stored info will not change at all. Simple example is storing the media query parameter such as "(max-width: 550px)", we can simply set a variable to easily change the 550px (max-width: @mobileScreen).
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

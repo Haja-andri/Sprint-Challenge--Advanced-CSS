@@ -1,1 +1,26 @@
 // Mixins Here
+
+.action-btn(@bkg-color, @txt-color, @size) {
+    font-size: 1.7rem;
+    background-color: @bkg-color;
+    text-align: center;
+    color: @txt-color;
+    width: @size;
+    max-width: @size;
+    min-width: 100px;
+    padding: .5em;
+    border-radius: .2em;
+    @media @mobile{
+        padding: 1em;
+      }    
+    
+    &:hover{
+        background-color: lighten(@bkg-color, 20%);
+        color: aqua;
+    }
+  }
+
+  .flex-wrap(){
+    display: flex;
+    flex-wrap: wrap;      
+  }

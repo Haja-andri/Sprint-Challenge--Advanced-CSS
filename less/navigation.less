@@ -1,1 +1,33 @@
 // Navigation code here
+nav {
+    .flex-wrap();
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    padding-bottom: 2rem;
+
+    .logo{
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    a{
+        font-size: 1.6rem;
+        margin: 2rem;  
+    }
+
+    // media queries
+    @media @mobile {
+        a{
+            font-size: 1.6rem;
+            margin: 1rem;
+        }
+    }
+
+    // make it fixed
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */    
+    opacity: 0.9;
+}
