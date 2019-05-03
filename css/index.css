@@ -170,6 +170,14 @@ nav {
   align-items: center;
   background-color: azure;
   padding-bottom: 2rem;
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  opacity: 0.9;
 }
 nav .logo {
   margin-top: 1rem;
@@ -194,6 +202,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 110px;
 }
 .home .intro img {
   border-radius: 0.5rem;
