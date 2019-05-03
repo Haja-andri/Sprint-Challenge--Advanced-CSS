@@ -19,8 +19,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
+    .flex-wrap();
     width: 100%;
 
     img {
@@ -62,13 +61,7 @@
       }
 
       .btn {
-        font-size: 1.7rem;
-        background-color: #333333;
-        text-align: center;
-        color: whitesmoke;
-        width: 40%;
-        padding: .5em;
-        border-radius: .2em;
+        .action-btn(#333, white);
       }
     }
 
